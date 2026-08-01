@@ -1,0 +1,67 @@
+name: myband
+description: Plataforma integral para bandas y músicos
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Estado
+  flutter_riverpod: ^2.5.1
+
+  # Firebase
+  firebase_core: ^3.1.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.1
+  firebase_storage: ^12.1.0
+  firebase_messaging: ^15.0.1
+  cloud_functions: ^5.0.1
+
+  # Navegación
+  go_router: ^14.2.0
+
+  # Metrónomo / Audio
+  audio_session: ^0.1.21
+  just_audio: ^0.9.40
+  vibration: ^2.0.0
+
+  # Offline / caché local
+  hive_flutter: ^1.1.0
+
+  # Utilidades
+  intl: ^0.19.0
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+# Genera los íconos nativos de Android/iOS/Web a partir del logo real.
+# Correr: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#D6FF3F"
+    theme_color: "#151517"
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#D6FF3F"
+  adaptive_icon_foreground: "assets/icon/app_icon_maskable.png"
+

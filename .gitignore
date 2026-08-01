@@ -1,0 +1,32 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+pubspec.lock
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Archivos de plataforma generados
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Firebase (generado por flutterfire configure — NO subir claves si el repo es público)
+# Si tu repo es privado, podés sacar esta línea para versionar firebase_options.dart
+# lib/firebase_options.dart
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
